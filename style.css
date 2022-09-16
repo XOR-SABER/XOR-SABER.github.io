@@ -1,33 +1,116 @@
+@import "~bootstrap/scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.blink_term_character{
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 30px;
+    color: rgb(2, 255, 99);
+    min-width: 360px;
+}
+.blink_term_character::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    display: inline-block;
+    background-color: rgb(2, 255, 99);
+    vertical-align: top;
+    width: 10px;
+    height: 30px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+  
+@keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
 body{
-    background: #131014;
-    color: #fff;
-    font-family: sans-serif;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 1rem;
+    background-color: black;
+}
+  
+.glitchy{
+    font-size: 15px;
+    animation: glitch 1s linear infinite;
+}
+  
+@keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
     }
-#main{
-    font-size: 2em;
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
 }
-ul#menu {
-    margin-top: 0%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    list-style: none;
-    background: rgb(55, 27, 75);
+  
+.glitchy:before,
+.glitchy:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
 }
-a#menu {
-    margin-top: 0%;
-    font-size: 1em;
+  
+.glitchy:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+  
+@keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+}
+  
+.glitchy:after{
+    animation: glitchBotom 1s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+  
+@keyframes glitchBotom{
+    2%,64%{
+        transform: translate(-2px,0);
+    }
+    4%,60%{
+        transform: translate(-2px,0);
+    }
+    62%{
+        transform: translate(-22px,5px) skew(21deg); 
+    }
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
-    text-decoration: none;
-    padding: 1em;
-    color: white;
-    text-align: center;
-}
-a:hover#menu {
-    background: rgb(33, 16, 37);
-}
-p#name {
-    position: fixed;
-    width: 50%;
-    bottom: 0px 
 }
