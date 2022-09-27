@@ -17,102 +17,8 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-        <div class = "container">
-        <a class="navbar-brand d-inline" href="#" >
-            <img src="/imgs/logo.svg" style="width: 12%;" class="">
-            BetanVault
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </a>
-            <div class="collapse navbar-collapse" id="navbarS">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active px-1">
-                        <a href="index.html#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item dropdown px-1">
-                        <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About_me
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#AboutMe">Description</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="/more_about_me.html#">More About me</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Fresno City College</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Working as a Tutor</a>
-                                <ul class="bg-dark dropdown-menu dropdown-submenu">
-                                    <li><a class="dropdown-item text-light" href="#">Reedley College Math Center</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">Fresno City College Math Center</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item text-light" href="#">CSU Monterey and beyond</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Coursework</a>
-                                <ul class="bg-dark dropdown-menu dropdown-submenu">
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-40</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-41</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-26</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-45</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">PHIL-2</a></li>
-                                </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Incoherent_Ramblings
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#Blog">Description</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Why Graph theory is extremely useful!</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Hash tables are overpowered!</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Nixonverse is the best Youtube series in a while.</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Making Video games is really hard..</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Why a professor and not a professonal?</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Sunsets: tying-up loose ends.</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            C++_Projects
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#CC">Description</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Lyric Generator</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Schedule Builder part 1: Graphs</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Line rasterization</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Hash Report</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Other_Projects
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#Proj">Description</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Tetris.js</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Cubed^2</a></li>
-                            <li><a class="dropdown-item text-light" href="#">ASM Complier</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Cheem's tweaks</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Python Convex hulls</a></li>
-                            <li><a class="dropdown-item text-light" href="#">ACUnitTest.h</a></li>
-                          </ul>
-                      </li>
-                    <li class="nav-item">
-                        <a href="#Contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/XOR-SABER" class="nav-link">
-                            <i class="img-fluid bi bi-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="main_nav"></div>
+    <script src="/scripts/gen_nav.js"></script>
     <!-- Introduction -->
     <section style="height: 8em;"></section>
     <section class="text-light p-5 p-lg-0 pt-lg-5 text-center">
@@ -130,7 +36,7 @@
                         in my neck of the woods? This is my little vault of content, on the internet.
                     </p>
                 </div>
-                <img class="img-fluid d-lg-block" style="padding: 0px 60px; max-width:50%; border-radius: 20%;" src="imgs/home/Mal.jpg" alt="">
+                <img class="img-fluid w-50 d-none d-sm-block" src="imgs/logo.svg" alt="">
             </div>
         </div>
     </section>
@@ -207,7 +113,7 @@
                         <div class="">
                             <h1 class="blink_term_character">://C++_Projects:</h1>
                             <center>
-                                <img class="img-fluid d-lg-block" src="imgs/home/AnimeCC.png" style="border-radius: 15%; border: 10px solid; border-color: white;" alt="">
+                                <img class="img-fluid d-lg-block" src="imgs/home/AnimeCC.png" style="border-radius: 15%;" alt="">
                             </center>
                             <p class="lead my-4">
                                 We love <span style="color: lime;">C++</span> here: 
@@ -305,7 +211,7 @@
                         Take a peek
                     </a>
                 </div>
-                <img class="img-fluid" style="padding: 0px 60px; max-width:50%; border-radius: 20%;" src="imgs/home/programming-languages.jpg" alt="">
+                <img class="img-fluid w-50 d-none d-sm-block" src="imgs/home/addtional_contact_image.jpg" alt="">
             </div>
         </div>
     </section>
@@ -334,7 +240,7 @@
                                 this is a complier made using <span style="color: red;">ARM32 Assembly</span>,
                                 to complie a custom language called BB8.
                             </p>
-                            <a href="#" class="btn btn-light mt-3">
+                            <a href="/asm_complier.html#" class="btn btn-light mt-3">
                                 <i class="bi bi-terminal-fill"></i>
                                 Assemble
                             </a>
@@ -386,10 +292,9 @@
             </div>
         </div>
     </section>
-    <section style="height: 10em;"></section>
+    <section style="height: 5em;"></section>
     <!-- Footer -->
 <footer id="Contact" class="text-center text-white">
-    <img class="img-fluid" style="padding: 0px 60px; max-width:50%; border-radius: 20%;" src="imgs/home/addtional_contact_image.jpg" alt="">
     <div class="text-center p-5">
         <h2 class="blink_term_character">://Contact: </h2>
         <p class="lead p-2">

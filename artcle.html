@@ -17,102 +17,9 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-        <div class = "container">
-        <a class="navbar-brand d-inline" href="#" >
-            <img src="/imgs/logo.svg" style="width: 12%;" class="">
-            BetanVault
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </a>
-            <div class="collapse navbar-collapse" id="navbarS">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active px-1">
-                        <a href="index.html#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item dropdown px-1">
-                        <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About_me
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#AboutMe">Info</a></li>
-                            <li><a class="dropdown-item text-light" href="">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="more_about_me.html#">More About me</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Fresno City College</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Working as a Tutor</a>
-                                <ul class="bg-dark dropdown-menu dropdown-submenu">
-                                    <li><a class="dropdown-item text-light" href="#">Reedley College Math Center</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">Fresno City College Math Center</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item text-light" href="#">CSU Monterey and beyond</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Coursework</a>
-                                <ul class="bg-dark dropdown-menu dropdown-submenu">
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-40</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-41</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-26</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">CSCI-45</a></li>
-                                    <li><a class="dropdown-item text-light" href="#">PHIL-2</a></li>
-                                </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Incoherent_Ramblings
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#Blog">Info</a></li>
-                            <li><a class="dropdown-item text-light" href="">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Why Graph theory is extremely useful!</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Hash tables are overpowered!</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Nixonverse is the best Youtube series in a while.</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Making Video games is really hard..</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Why a professor and not a professonal?</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Sunsets: tying-up loose ends.</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            C++_Projects
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#CC">Info</a></li>
-                            <li><a class="dropdown-item text-light" href="">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Lyric Generator</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Schedule Builder part 1: Graphs</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Line rasterization</a></li>
-                            <li><a class="dropdown-item text-light" href="#">ADynamo.hpp</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Other_Projects
-                        </a>
-                        <ul class="bg-dark dropdown-menu">
-                            <li><a class="dropdown-item text-light" href="/index.html#Proj">Info</a></li>
-                            <li><a class="dropdown-item text-light" href="">Menu</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Tetris.js</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Cubed^2</a></li>
-                            <li><a class="dropdown-item text-light" href="#">ASM Complier</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Cheem's tweaks</a></li>
-                            <li><a class="dropdown-item text-light" href="#">Python Convex hulls</a></li>
-                            <li><a class="dropdown-item text-light" href="#">ACUnitTest.h</a></li>
-                          </ul>
-                      </li>
-                    <li class="nav-item">
-                        <a href="#Contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/XOR-SABER" class="nav-link">
-                            <i class="img-fluid bi bi-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="main_nav"></div>
+    <script src="/scripts/gen_nav.js"></script>
+    <!-- end of navbar -->
     <div style="height: 5em;"></div>
     <article class="text-light">
         <center>
@@ -240,7 +147,7 @@
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample1">
                     <div class="bg-black card card-body">
-                        Email: thelm900@gmail                    
+                        Email: AM NOT GIVING MY REAL EMAIL                  
                     </div>
                   </div>
                 </div>
@@ -266,9 +173,6 @@
                 <a class="btn btn-outline-light btn-floating m-1" href="index.html#Contact" role="button">Contact</a>
                 <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/XOR-SABER" role="button"><i class="img-fluid bi bi-github"></i></a>
               </section>
-              <div class="h4 text_center p-3">
-                <a class="text-warning" href="https://greg.jamison.cc/home.php" style="text-decoration: none"> Hey do you want a laugh? Look at this dinosaur!</a>
-            </div>
         </div>
       </footer>
 </body>
