@@ -43,8 +43,8 @@
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
-                        <div class="text-left p-5" >
-                            <h2 class="blink_term_character" style="margin-left: 7%;" >://The Read_me file: </h2>
+                        <div class="text-left p-2" >
+                            <h2 class="blink_term_character" style="" >://Read_me_file: </h2>
                         </div>
                         <p>
                             For this assignment, we'll focus on #3. In particular, assembly is handy with compilers in two ways:
@@ -59,12 +59,10 @@
                         <p>And this will generate a main.s, and a.out, and automatically run it!</p>
                         <p>Unlike our other assembly projects, this one will be written in C or C++ (your choice). Your code's OUTPUT will be assembly. And an executable.</p>
                         <p>If no errors are found in the source code, you will then assemble the source code emitted, and produce an a.out!</p>
-                        <p>===================</p>
-                            <h2>Basic Basic v8.0 Language Specification</h2>
-                        <p>===================</p>
-                            <h2>General Error Rule:</h2>
-                            <p>0. Any line that does not conform to the rules below will result in your compiler outputting "Syntax Error on Line X" (where X is the line of code) and terminating without creating an assembly source code or executable.</p>
-                            <p>Each line of code will take up *exactly* one line of text (BB8 is newline terminated):</p>
+                        <h2 class="blink_term_character">://Basic Basic v8.0 Language Specification: </h2>
+                            <h4>General Error Rule:</h4>
+                            <p>0. Any line that does not conform to the rules below will result in your compiler outputting "Syntax Error on Line X" (where X is the line of code) and terminating without creating an assembly source code or executable. 
+                                Each line of code will take up *exactly* one line of text (BB8 is newline terminated):</p>
                             <p>1. Every line of code must start with a number</p>
                             <p>1.1 All lines must start with a number, and the line number of each line must be greater than the line number of the line before it, but they do not need to be continuous. (I.e., line could be numbered 10, 20, 30, etc.)</p>
                             <p>1.2 All lines that start with a number and then REM are comments, and the rest of the line must be discarded.</p>
@@ -81,26 +79,22 @@
                             <p>2.9 IF (LOGICAL EXPRESSION) THEN GOTO X ELSE GOTO Y - if the logical expression is true (see below) then jump to line X, otherwise jump to line Y.</p>
                             <p>2.11 END - terminates the program</p>
                             <p>2.12 Note: All commands take up exactly one line. Any command not matching the above is a syntax error.</p>
-
-                            <h3>3. Variables.</h3>
+                            <p>3. Variables.</p>
                             <p>3.1 All variables will be 32-bit integers.</p>
                             <p>3.1 All variables will be 32-bit integers.</p>
                             <p>3.2 Only 8 variables exist: A, B, C, I, J, X, Y, Z.</p>
                             <p>3.3 Trying to use any other variable is a syntax error.</p>
                             <p>3.4 All variables must be set to 0 at program start</p>
                             <p>3.5 Example: LET X = C + Z will set X to the sum of C + Z</p>
-
-                            <h3>4. Logical expressions.</h3>
+                            <p>4. Logical expressions.</p>
                             <p>4.1 All logical expressions are comparisons of two variables. (I.e. no comparisons with immediates.)</p>
                             <p>4.2 The following comparisons must be supported: >, <, >=, <=, ==, !=.</p>
                             <p>4.3 The only thing an if statement can do is GOTO one line, and maybe ELSE goto another line.</p>
                             <p>4.4 Example: IF X > Y THEN GOTO 10</p>
-
-                            <h3>5. Program termination.</h3>
+                            <p>5. Program termination.</p>
                             <p>5.1 The program will terminate when it tries to go past the last line of code</p>
                             <p>5.2 The program will terminate whenever a EXIT or END command is executed</p>
-
-                            <h3>5. Program termination.</h3>
+                            <p>6. Syntax errors.</p>
                             <p>6.1 Any line of code not conforming to the syntax specified above will generate an error.</p>
                             <p>6.2 All errors will be detected at compile time. There are no run time errors.</p>
                             <p>6.3 When a syntax error is detected, print out: "Syntax Error on line X" and terminate compilation.</p>
@@ -110,12 +104,12 @@
                             <p>6.7 Using an operation or logical expression not supported is an error</p>
                             <p>6.8 Giving a command that does not exist is an error</p>
                             <div style="height: 3em;"></div>
-                            <h3>Example code #1:</h3>
+                            <h3 class="blink_term_character">//Example_code #1:</h3>
                             <p>10 PRINT "HELLO WORLD!\n";</p>
                             <p>20 GOTO 10</p>
                             <p>This will go into an infinite loop, printing out HELLO WORLD! over and over.</p>
                             <div style="height: 3em;"></div>
-                            <h3>Example code #2:</h3>
+                            <h3 class="blink_term_character">//Example_code #2:</h3>
                             <p>5 REM This is a comment</p>
                             <p>10 LET X = 0</p>
                             <p>11 LET A = 5</p>

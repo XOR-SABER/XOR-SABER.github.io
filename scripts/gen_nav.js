@@ -52,12 +52,18 @@ var main_nav = '' +
 '                        <ul class="bg-dark dropdown-menu">' + 
 '                            <li><a class="dropdown-item text-light" href="/index.html#Blog">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_blog.html#">Menu</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Why Graph theory is extremely useful!</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="#">Why Graph theory is extremely useful!</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Intro into graphs</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-41.html#">DFS & BFS</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-26.html#">Dijkstra\'s algorithm</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">Topological Sort</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">Convex hulls</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Hash tables are overpowered!</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Nixonverse is the best Youtube series in a while.</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Making Video games is really hard..</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Why a professor and not a professonal?</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Sunsets: tying-up loose ends.</a></li>' + 
 '                          </ul>' + 
 '                      </li>' + 
 '                      <li class="nav-item dropdown">' + 
@@ -80,12 +86,31 @@ var main_nav = '' +
 '                        <ul class="bg-dark dropdown-menu">' + 
 '                            <li><a class="dropdown-item text-light" href="/index.html#Proj">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#">Menu</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Tetris.js</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Cubed^2</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="/asm_complier.html#">ASM Complier</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Cheem\'s tweaks</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Python Convex hulls</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">ACUnitTest.h</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#JS">Javascript</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Tetris.js</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
+'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#Java">Java</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Cheem\'s Tweaks</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
+'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#ARM32">ARM 32 Assembly</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">ASM Complier</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
+'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#PY">Python</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">Python Convex hulls</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
+'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#C">C</a>'+
+'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
+'                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">ACUnitTest.h</a></li>' + 
+'                                </ul>' + 
+'                            </li>' + 
 '                          </ul>' + 
 '                      </li>' + 
 '                    <li class="nav-item">' + 
