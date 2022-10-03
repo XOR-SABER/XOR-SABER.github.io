@@ -73,7 +73,7 @@ var main_nav = '' +
 '                        <ul class="bg-dark dropdown-menu">' + 
 '                            <li><a class="dropdown-item text-light" href="/index.html#CC">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_cpp_projects.html#">Menu</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Lyric Generator</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/lyric_generator.html">Lyric Generator</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Schedule Builder part 1: Graphs</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Line rasterization</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Hash Report</a></li>' + 
