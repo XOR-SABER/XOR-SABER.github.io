@@ -88,7 +88,7 @@ var main_nav = '' +
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#">Menu</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#JS">Javascript</a>'+
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Tetris.js</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/tetrisjs.html#">Tetris.js</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#Java">Java</a>'+

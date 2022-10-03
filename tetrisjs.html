@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris.JS</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+        crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <link href="tetris.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="main_nav"></div>
+    <script src="/scripts/gen_nav.js"></script>
+    <!-- end of navbar -->
+    <div style="height: 5em;"></div>
+    <h1 class="blink_term_character">://Tetris.JS</h1>
+    <h3 class="lead text-light">
+        Everyone's favorite puzzle:
+    </h3>
+    <div style="height: 3em;"></div>
+    <div id = "main d-none">
+        <div style="color: white;" id="score"></div>
+        <aside id = "game">
+            <canvas id="tetris" width="240" height="400"></canvas>
+            <div id = "Nice">
+                <button id="start" type="button" class="btn btn-light" onclick="toggle()">
+                    <i class="bi bi-terminal-fill"></i>
+                    start game:
+                </button>
+                <p style="color: white;">Next Piece</p>
+                <canvas id="next" width="100"  height="125"></canvas>
+            </div>
+        </aside>
+    </div>
+    <section class="text-light p-5 p-lg-0 pt-lg-5 text-center">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="blink_term_character">://Project_description: </h1>
+                    <div style="height: 1em;"></div>
+                    <p class="lead">My first rodeo in <span style="color: orange;">Javascript</span>,</p>
+                    <h5>
+                        This is a javascript implmentation of tetris, 
+                        this was made for my CIT-95 Course, 
+                        which is a introduction to Javascript.
+                        making games using javascript is a 
+                        good way to learn javascript and html. 
+                        Everything is here, except the music, on mobile, 
+                        and smaller screens you might not be able to see it or play it. 
+                        But it's here and interactive. Intially it was a website with a account system, 
+                        but its not needed to show the project. 
+                    </h5>
+                </div>
+                <img class="img-fluid d-lg-block" style="padding: 0px 80px; border-radius: 20%;" src="imgs/projects/tetrisjsscrencap.png">
+            </div>
+        </div>
+        
+    </section>
+    <script src ="/scripts/tetrisjs/tetris-functions.js"></script>
+    <script src="/scripts/tetrisjs/tetris.js"></script>
+    <div style="height: 2em;"></div>
+    <footer id="Contact" class="text-center text-white">
+        <div class="text-center p-5">
+            <h2 class="blink_term_character">://Contact: </h2>
+            <p class="lead p-2">
+                There's plenty of ways to contact me: 
+            </p>
+            <p class="p-3">
+                You can email me using the address below, or DM me on discord!
+            </p>
+            <p>
+            <a class="h1 btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <i class="img-fluid bi bi-envelope"></i>
+                    Email me
+            </a>
+            <button class="h1 btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                <i class="bi bi-discord"></i>
+                DM me on discord
+            </button>          
+            </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="bg-black card card-body">
+                        Email: AM NOT GIVING MY REAL EMAIL                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="bg-black card card-body">
+                        Discord ID: XOR#9978
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="">
+            <div class="text-center p-3">
+                <h2 class="blink_term_character">://Made by Alexander Baylee Betancourt: </h2>
+            </div>
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#" role="button">Home</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#AboutMe" role="button">About_Me</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#Blog" role="button">Incoherent_Ramblings</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#CC" role="button">C++_Projects</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#Proj" role="button">Other_Projects</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html#Contact" role="button">Contact</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/XOR-SABER" role="button"><i class="img-fluid bi bi-github"></i></a>
+              </section>
+        </div>
+      </footer>
+</body>
+</html>
