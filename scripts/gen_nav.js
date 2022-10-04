@@ -21,13 +21,6 @@ var main_nav = '' +
 '                            <li><a class="dropdown-item text-light" href="/index.html#AboutMe">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_about_me.html#">Menu</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/more_about_me.html#">More About Me</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="/menu_about_me.html#SCCCD">State Center Community College District</a>' + 
-'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="#">Reedley College</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="#">Fresno City College</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="#">Clovis Community College</a></li>' + 
-'                                </ul>' + 
-'                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_about_me.html#Artcles">Working as a Tutor</a>' + 
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
 '                                    <li><a class="dropdown-item text-light" href="#">Reedley College Math Center</a></li>' + 
@@ -61,7 +54,6 @@ var main_nav = '' +
 '                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">Convex hulls</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Hash tables are overpowered!</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Nixonverse is the best Youtube series in a while.</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="#">Making Video games is really hard..</a></li>' + 
 '                          </ul>' + 
@@ -74,9 +66,9 @@ var main_nav = '' +
 '                            <li><a class="dropdown-item text-light" href="/index.html#CC">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_cpp_projects.html#">Menu</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/lyric_generator.html">Lyric Generator</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Schedule Builder part 1: Graphs</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Line rasterization</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Hash Report</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/schedulebuilder1.html#">Schedule Builder part 1: Graphs</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/line_rasterization.html#">Line rasterization</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/socialnetwork.html#">Social network</a></li>' + 
 '                        </ul>' + 
 '                      </li>' + 
 '                    <li class="nav-item dropdown">' + 
