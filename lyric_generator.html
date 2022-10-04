@@ -20,23 +20,44 @@
     <div id="main_nav"></div>
     <script src="/scripts/gen_nav.js"></script>
     <!-- end of navbar -->
+    <div style="height: 5em;"></div>
     <article class="text-light">
         <section class="text-light p-5 p-lg-0 pt-lg-5 text-center">
-            <h1 class="blink_term_character" id="lyric-generator">://Lyric Generator:</h1>
-            <div style="height: 3em;"></div>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img1.png"></img></p>
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1 class="blink_term_character">://lyric_generator: </h1>
+                        <h3 class="lead">
+                          A graph theory problem using markov chaining as a solution. 
+                          Generating lyrics from markov graphs and random generation. 
+                          As well as using the C++ to create a system to query and look
+                          for files. This includes various optimizations like caching, hashing,
+                          and use of the correct data structure. Features Object Oriented programming.
+                        </h3>
+                    </div>
+                    <img class="img-fluid d-lg-block" style="padding: 0px 80px; max-width: 50%; border-radius: 20%;" src="imgs/projects/markov/1_SUUir-VGHy2OFqbpKxwuJA.png">
+                </div>
+            </div>
+        <section class="text-light p-5 p-lg-0 pt-lg-5 text-center">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-left p-2" >
+                            <h2 class="blink_term_character">://Read_me_file: </h2>
+                        </div>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img1.png"></img>
             <p>A Markov Chain is a type of graph in which each vertex represents a word, and
             the edges (directed and weighted) coming out of each vertex indicate how often
             the other word came from that word. We load the graph using data from a corpus
             of text, and the graph we get at the end of it can be used to generate new
             sentences in the style of whatever we trained it with.</p>
-            <h3 id="i-loaded-1500-lines-of-wu-tang-lyrics-and-got-the-following-results-">I loaded 1500 lines of Wu-Tang lyrics and got the following results:</h3>
+            <h3>I loaded 1500 lines of Wu-Tang lyrics and got the following results:</h3>
             <p>&quot;My glock like Voltron.&quot;</p>
             <p>&quot;Bring da mother, bring da mother, bring it was kickin rhymes like ya Meth hittin caps on the GZA.&quot;</p>
             <p>&quot;Diluted, broken down, your Wu is smokey bear when he don&#39;t need that Wu-Tang style.&quot;</p>
             <p>&quot;Choppin&#39; through your problems the gods are hotter than heavy metal frame.&quot;</p>
             <p>&quot;Stop quick hold us so grab your whole era.&quot;</p>
-            <h3 id="training-it-on-the-declaration-of-independence-i-got-this-monster-of-a-sentence-out-">Training it on the Declaration of Independence, I got this monster of a sentence out:</h3>
+            <h3>Training it on the Declaration of Independence, I got this monster of a sentence out:</h3>
             <p>&quot;He has endeavoured to the lives our separation, and of English laws of our
             trade with his assent to our constitution, and hold them, to dissolve the
             supreme judge of immediate and payment of consanguinity we therefore, the most
@@ -44,8 +65,8 @@
             their country, to the conditions of right do all allegiance to attend to the
             inhabitants of fatiguing them of an unwarrantable jurisdiction foreign
             mercenaries to all experience hath shewn, that governments.&quot;</p>
-            <h5 id="fun-stuff-">Fun stuff!</h5>
-            <h5 id="the-program-can-preform-the-following-tasks-">The program can preform the following tasks:</h5>
+            <h5 >Fun stuff!</h5>
+            <h5 >The program can preform the following tasks:</h5>
             <p>1. Load data from disk into a graph</p>
             <p>2. Generate Random Sentences</p>
             <p>3. Generate a cache file for quick data storage</p>
@@ -57,7 +78,7 @@
             <p>9. Use a graph with adjacency lists</p>
             <p>10. Generate lyrics using probablity</p>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-1-loading-data">://Part 1 - Loading Data</h2>
+            <h2 class="blink_term_character" >://Part 1 - Loading Data</h2>
             <p>You need to build a graph (I created a couple sample classes and data
             structures for you, but you can discard them if you are feeling lucky) using
             the data loaded from disk. You&#39;ll load one line at a time from the file using
@@ -70,25 +91,24 @@
             another word creates an edge between them with weight 1 (if there was no edge
             before) or increases the existing edge weight by one if it is a duplicate.</p>
             <p>Uppercaseify all inputs, so Tomato and TOMATO and tomato are the same.</p>
-            <h3 id="for-example-">For example:</h3>
+            <h3 >For example:</h3>
             <p>APPLE TOMATO</p>
             <p>Apple TOMATO</p>
             <p>TOMATO APPLE</p>
             <p>TOMATO PEACH</p>
-            <h4 id="will-create-a-graph-that-looks-like-this-">Will create a graph that looks like this:</h4>
+            <h4 >Will create a graph that looks like this:</h4>
             <pre>
     2          1
     APPLE --> TOMATO --> PEACH
         1
         <--
             </pre>
-
             <p>APPLE started two lines, TOMATO started two lines. TOMATO ended two lines,
             APPLE ended one line, PEACH ended one line. </p>
             <p>And finally prining the graph to the screen</p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img2print.png"></img></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img2print.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-2-generating-random-sentences">://Part 2 - Generating Random Sentences</h2>
+            <h2 class="blink_term_character">://Part 2 - Generating Random Sentences</h2>
             <p>So let&#39;s say you&#39;re ready to generate a random sentence. There were 4 lines in
             the input file, so you will do a &quot;int roll = rand() % 4&quot; to get a number from
             0 to 3. You then will go through each vertex in the graph (in the order they
@@ -117,47 +137,47 @@
             done with this sentence.</p>
             <p>Move on to the next sentence, and you&#39;ll all done.</p>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-3-generate-a-cache-file-for-quick-data-storage">://Part 3 - Generate a cache file for quick data storage</h2>
+            <h2 class="blink_term_character">://Part 3 - Generate a cache file for quick data storage</h2>
             <p>The whole point of generating these cache files is to minimize the time needed to
             use the data, it ususaly faster to use data that is already formated and ready to be inserted
             into the graph than creating new data</p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img3cache.png"></img></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img3cache.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-4-generate-stats-for-the-graph">://Part 4 - Generate stats for the graph</h2>
+            <h2 class="blink_term_character">://Part 4 - Generate stats for the graph</h2>
             <p>The whole goal of this function of the program is to show and describe the graph:</p>
             <p>1. The word with the most weight</p>
             <p>2. The most common beginning word</p>
             <p>3. The most common ending word</p>
             <p>4. the most common word</p>
             <p>5. the most common edge word</p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img4stats.png"></img></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img4stats.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-5-implement-using-object-oriented-programming">://Part 5 - Implement using object oriented programming</h2>
+            <h2 class="blink_term_character">://Part 5 - Implement using object oriented programming</h2>
             <p>I personally have nothing to show for my CSCI-41, class which is the class where you learn how to 
             use object oriented programming. I ended up refactoring this code to use that methodology. Using separate .cc files and object files and a makefile to complie the program. </p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img5code.png"></img></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img5code.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-6-implement-operator-overloading">://Part 6- Implement operator overloading</h2>
+            <h2 class="blink_term_character">://Part 6- Implement operator overloading</h2>
             <p>C++ has the special ablity to overload certain operators
             for this project in particular, I imagine overloading the 
             &lt;&lt; operator would help with the printing, and show a use for it.</p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img6code.png"></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img6code.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-7-use-include-filesystem-">://Part 7- use #include &quot;filesystem&quot;</h2>
+            <h2 class="blink_term_character">://Part 7- use #include &quot;filesystem&quot;</h2>
             <p>using filesystem which isn&#39;t covered in any of the computer science classes, 
             plus a nifty looking file explorer would be cool to implement. </p>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img7files.png"></img></p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img7files.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-8-combine-graphs">://Part 8 - Combine graphs</h2>
+            <h2 class="blink_term_character">://Part 8 - Combine graphs</h2>
             <p>this part came from a issue I had with not being able to combine graphs for easy use, so I can get bigger data sets. which is baiscally the same as the contructor for the graph, but I had to use it a private function to 
             be able to use it again for the adding the new graph.</p>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-9-use-a-graph-with-adjacency-lists">://Part 9 - Use a graph with adjacency lists</h2>
-            <p><img class="img-fluid d-lg" src="/imgs/projects/markov/img9code.png"></img></p>
+            <h2 class="blink_term_character">://Part 9 - Use a graph with adjacency lists</h2>
             <p>Using a vector of vertexes, use it like a adjacency list to hold the edges we are connected to. this is a 
             graph theory problem overall, and using this methology would help with the program. </p>
+            <img class="img-fluid d-lg" src="/imgs/projects/markov/img9code.png"></img>
             <div style="height: 3em;"></div>
-            <h2 class="blink_term_character" id="part-10-generate-lyrics-using-probablity">://Part 10 - Generate lyrics using probablity</h2>
+            <h2 class="blink_term_character">://Part 10 - Generate lyrics using probablity</h2>
             <p>we need to figure out what word comes next. Tomato appeared 4 times in
             the input, 2 times as the end of a sentence (50% chance), and 2 times leading
             to other words (25% chance of APPLE, 25% chance of PEACH). So let&#39;s say we
@@ -169,9 +189,9 @@
             PEACH is our next node in the graph. </p>
             <p>thus using the probablity we learned in CSCI-26 as well as the graphs we learned. </p>
             <p>Good luck! Lol.</p>
-
-        </section>
-        </section>
+            </div>
+          </div>
+      </section>
     </article>
     <footer id="Contact" class="text-center text-white">
         <div class="text-center p-5">

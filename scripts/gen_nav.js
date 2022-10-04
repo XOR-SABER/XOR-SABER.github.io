@@ -91,11 +91,6 @@ var main_nav = '' +
 '                                    <li><a class="dropdown-item text-light" href="/tetrisjs.html#">Tetris.js</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
-'                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#Java">Java</a>'+
-'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Cheem\'s Tweaks</a></li>' + 
-'                                </ul>' + 
-'                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#ARM32">ARM 32 Assembly</a>'+
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
 '                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">ASM Complier</a></li>' + 
@@ -108,7 +103,7 @@ var main_nav = '' +
 '                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#C">C</a>'+
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">ACUnitTest.h</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/ctester.html">ACUnitTest.h</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
 '                          </ul>' + 
