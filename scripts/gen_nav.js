@@ -103,7 +103,7 @@ var main_nav = '' +
 '                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#PY">Python</a>'+
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/asm_complier.html">Python Convex hulls</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/convex_hulls.html">Python Convex hulls</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_other_projects.html#C">C</a>'+
