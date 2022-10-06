@@ -23,18 +23,14 @@ var main_nav = '' +
 '                            <li><a class="dropdown-item text-light" href="/more_about_me.html#">More About Me</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_about_me.html#Artcles">Working as a Tutor</a>' + 
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="#">Reedley College Math Center</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="#">Fresno City College Math Center</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/tutorialservices.html#Reedley">Reedley College Math Center</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/tutorialservices.html#Fresno">Fresno City College Math Center</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">CSU Monterey and beyond</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="/menu_about_me.html#Coursework">Coursework</a>' + 
-'                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">CSCI-40</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-41.html#">CSCI-41</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-26.html#">CSCI-26</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">CSCI-45</a></li>' + 
-'                                </ul>' + 
+'                            <li><a class="dropdown-item text-light" href="/csci-40.html#">CSCI-40</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/csci-41.html#">CSCI-41</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/csci-26.html#">CSCI-26</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/csci-45.html#">CSCI-45</a></li>' + 
 '                            </li>' + 
 '                          </ul>' + 
 '                      </li>' + 
@@ -45,17 +41,15 @@ var main_nav = '' +
 '                        <ul class="bg-dark dropdown-menu">' + 
 '                            <li><a class="dropdown-item text-light" href="/index.html#Blog">Description</a></li>' + 
 '                            <li><a class="dropdown-item text-light" href="/menu_blog.html#">Menu</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Why Graph theory is extremely useful!</a>'+
+'                            <li><a class="dropdown-item text-light" href="/graphs.html#">Why Graph theory is extremely useful!</a>'+
 '                                <ul class="bg-dark dropdown-menu dropdown-submenu">' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-40.html#">Intro into graphs</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-41.html#">DFS & BFS</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-26.html#">Dijkstra\'s algorithm</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">Topological Sort</a></li>' + 
-'                                    <li><a class="dropdown-item text-light" href="/csci-45.html#">Convex hulls</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/graphs.html#intro">Intro into graphs</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/graphs.html#DFS_BFS">DFS & BFS</a></li>' + 
+'                                    <li><a class="dropdown-item text-light" href="/graphs.html#TOPO">Topological Sort</a></li>' + 
 '                                </ul>' + 
 '                            </li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Nixonverse is the best Youtube series in a while.</a></li>' + 
-'                            <li><a class="dropdown-item text-light" href="#">Making Video games is really hard..</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/monumentmythos.html#">Nixonverse is the best Youtube series in a while.</a></li>' + 
+'                            <li><a class="dropdown-item text-light" href="/beyond.html#">CSU Monterey and beyond</a></li>' + 
 '                          </ul>' + 
 '                      </li>' + 
 '                      <li class="nav-item dropdown">' + 
