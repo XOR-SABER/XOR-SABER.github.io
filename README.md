@@ -1,2 +1,3 @@
 # This is my website 
 Am gonna update this readme eventually... 
+This website Sucks.. 
