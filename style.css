@@ -34,7 +34,12 @@
 body{
     font-family: 'Share Tech Mono', monospace !important;
     font-size: 1rem;
+    color: white;
     background-color: black;
+    text-align: center;
+}
+a {
+    color: white;
 }
 .center {
     display: flex;
@@ -43,14 +48,10 @@ body{
     align-items: center;
     height: 70vh;
   }
-.white_text {
-    color: white;
-    text-align: center;
-}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: white;
-  }
+}
