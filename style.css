@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/variables";
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 .blink_term_character{
@@ -34,24 +35,82 @@
 body{
     font-family: 'Share Tech Mono', monospace !important;
     font-size: 1rem;
-    color: white;
     background-color: black;
-    text-align: center;
 }
-a {
-    color: white;
+  
+.glitchy{
+    font-size: 15px;
+    animation: glitch 1s linear infinite;
 }
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-  }
+  
+@keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+}
+  
+.glitchy:before,
+.glitchy:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+  
+.glitchy:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+  
+@keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+}
+  
+.glitchy:after{
+    animation: glitchBotom 1s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+  
+@keyframes glitchBotom{
+    2%,64%{
+        transform: translate(-2px,0);
+    }
+    4%,60%{
+        transform: translate(-2px,0);
+    }
+    62%{
+        transform: translate(-22px,5px) skew(21deg); 
+    }
+}
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
 }
